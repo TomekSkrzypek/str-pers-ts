@@ -1,0 +1,16 @@
+@import "src/variables/breakpoints";
+//@use 'src/variables/breakpoints';
+
+.PageHeader{
+  background-color: orange;
+  //opacity: 0.5;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+
+  @media (min-width: $mobile-breakpoint) {
+    display: flex;
+    background-color: hotpink;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,27 @@
+@import "src/variables/breakpoints";
+
+.Menu {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  //align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  //opacity: 0.5;
+
+  &__item {
+    text-decoration: none;
+  }
+
+  @media (min-width: $mobile-breakpoint) {
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    margin: 0;
+    transition: 0.8s all ease;
+  }
+}
