@@ -1,5 +1,4 @@
 @import "src/variables/breakpoints";
-//@use 'src/variables/breakpoints';
 
 .PageHeader{
   background-color: orange;
@@ -7,10 +6,15 @@
   display: flex;
   justify-content: space-between;
   padding: 1em;
+  font-size: 1.5rem;
+  height: 80px;
+  align-items: center;
+
 
   @media (min-width: $mobile-breakpoint) {
     display: flex;
     background-color: hotpink;
     justify-content: space-between;
+
   }
 }
