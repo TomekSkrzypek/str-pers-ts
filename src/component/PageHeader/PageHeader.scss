@@ -13,8 +13,9 @@
 
   @media (min-width: $mobile-breakpoint) {
     display: flex;
-    background-color: hotpink;
+    background-color: red;
     justify-content: space-between;
+    height: 40px;
 
   }
 }

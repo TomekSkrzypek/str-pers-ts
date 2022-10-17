@@ -1,10 +1,11 @@
-@import "src/variables/breakpoints";
+@import "../../variables/breakpoints";
 
 .Menu {
   list-style: none;
   margin: 0 auto;
   padding: 0;
-  height: 100vh;
+  //height: 100vh;
+  height: 30px;
   text-align: center;
   justify-content: center;
   //align-items: center;
