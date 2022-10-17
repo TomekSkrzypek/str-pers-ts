@@ -1,16 +1,19 @@
 sectionBlog {
+  //height: 50vh;
+  //display: flex;
+  //justify-content: center;
+}
+
+.sectionBlog {
   height: 50vh;
   display: flex;
   justify-content: center;
 
-}
-
-.sectionBlog {
   &__container {
     height: 30vh;
-
-    &Blog__one {
+  }
+    &__one {
       background-color: purple;
     }
-  }
+
 }

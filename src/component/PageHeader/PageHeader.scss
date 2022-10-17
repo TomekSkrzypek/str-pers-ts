@@ -1,21 +1,28 @@
 @import "src/variables/breakpoints";
+@import "src/variables/lenghts";
 
-.PageHeader{
+.PageHeader {
+  //MOBILE
   background-color: orange;
-  //opacity: 0.5;
+  opacity: 0.5;
   display: flex;
-  justify-content: space-between;
-  padding: 1em;
-  font-size: 1.5rem;
-  height: 80px;
+  justify-content: center;
+  padding: 0;
+  font-size: 3rem;
+  line-height: 5rem;
   align-items: center;
-
+  height: 100vh;
+  width: 100vw;
 
   @media (min-width: $mobile-breakpoint) {
+    //DESKTOP
     display: flex;
     background-color: red;
     justify-content: space-between;
-    height: 40px;
-
+    height: $page-header-height;
+    font-size: 2rem;
+    text-decoration: none;
+    color: yellow;
+    position: sticky;
   }
 }

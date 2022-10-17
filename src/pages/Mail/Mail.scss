@@ -1,0 +1,16 @@
+sectionMail {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+
+}
+
+.sectionMail {
+  &__container {
+    height: 30vh;
+
+    &Mail__one {
+      background-color: purple;
+    }
+  }
+}

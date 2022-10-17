@@ -1,8 +1,14 @@
+@import "src/variables/lenghts";
+
 .Layout {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  position: absolute;
+  //width: 100vw;
   &__main{
     flex-grow: 1;
+    //height: calc(100vh - $page-header-height);
   }
 }

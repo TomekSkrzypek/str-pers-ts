@@ -1,13 +1,21 @@
 @import "src/variables/breakpoints";
 
 .Logo {
-  //display: none;
+  display: none;
   //display: flex;
-  color: yellow;
   text-decoration: none;
   font-weight: bold;
-  font-size: 6rem;
+  font-size: 2rem;
+  &__item{
+    text-decoration: none;
+    color: lime;
+  }
+
   @media (min-width: $mobile-breakpoint) {
+    //DESKTOP
     display: flex;
+    padding: 1.5rem;
+    color: yellow;
+    text-decoration: none;
   }
 }

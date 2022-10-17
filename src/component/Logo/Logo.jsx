@@ -6,8 +6,8 @@ export function Logo() {
     // return
     return (
         <>
-            {/*<Link className="Logo" to="/">LOGO</Link>*/}
-            <h1>LOGO</h1>
+
+            <h1 className="Logo"><Link className="Logo__item" to="/">Tomek Skrzypek</Link></h1>
         </>
     )
 }
