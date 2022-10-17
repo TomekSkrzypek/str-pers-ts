@@ -19,6 +19,7 @@ export function Layout() {
                 {/*<div>*/}
                 {/*    <Link to="/blog">BLOG_W_ROUTER</Link>*/}
                 {/*</div>*/}
+                <li><Link className="Menu__item" to="/blog">Blog</Link></li>
                 <Routes>
                     <Route path="/" element={<ScrollPage/>}/>
                     <Route path="/blog" element={<Blog/>}/>

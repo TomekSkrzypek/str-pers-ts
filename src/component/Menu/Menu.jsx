@@ -13,7 +13,7 @@ export function Menu() {
                 <li>3</li>
                 {/*<Link to="/blog">BLOGER</Link>*/}
                 {/*<li><Link className="Menu__item" to="/">Strona główna</Link> </li>*/}
-                <li><Link className="Menu__item" to="/blog">Blog</Link></li>
+                {/*<li><Link className="Menu__item" to="/blog">Blog</Link></li>*/}
                 {/*<li><Link className="Menu__item" to="/mail">Mail</Link></li>*/}
 
             </ul>
