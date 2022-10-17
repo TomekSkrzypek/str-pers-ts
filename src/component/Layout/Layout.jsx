@@ -16,28 +16,22 @@ export function Layout() {
         <div className="Layout">
 
             <Router>
-                {/*<div>*/}
-                {/*    <Link to="/blog">BLOG_W_ROUTER</Link>*/}
-                {/*</div>*/}
+
                 <PageHeader/>
+
+                <main className="Layout__main">
+                    <Outlet/>
+                </main>
+
+
 
 
                 <Routes>
                     <Route path="/" element={<ScrollPage/>}/>
                     <Route path="/blog" element={<Blog/>}/>
                     <Route path="/mail" element={<Mail/>}/>
-                    {/*            <Route path="/mail" element={<Mail />}/>*/}
                 </Routes>
             </Router>
-            <main className="Layout__main">
-                <Outlet/>
-            </main>
-            {/*<Link to="/blog">BLOGGGG</Link>*/}
-
-            {/*<Menu/>*/}
-            {/*<ScrollPage/>*/}
-
-
 
         </div>
     )

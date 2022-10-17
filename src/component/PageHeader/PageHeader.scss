@@ -4,7 +4,7 @@
 .PageHeader {
   //MOBILE
   background-color: orange;
-  opacity: 0.5;
+  //opacity: 0.5;
   display: flex;
   justify-content: center;
   padding: 0;
@@ -24,5 +24,7 @@
     text-decoration: none;
     color: yellow;
     position: sticky;
+    top: 0;
+    z-index: 100;
   }
 }

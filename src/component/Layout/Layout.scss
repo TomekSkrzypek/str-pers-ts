@@ -5,10 +5,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
+  //position: absolute;
   //width: 100vw;
   &__main{
-    flex-grow: 1;
+    //flex-grow: 1;
+    //to wyzej pan Jacek
+
+
     //height: calc(100vh - $page-header-height);
+    //top: -180px;
   }
 }

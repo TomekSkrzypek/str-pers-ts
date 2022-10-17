@@ -1,8 +1,4 @@
-sectionBlog {
-  //height: 50vh;
-  //display: flex;
-  //justify-content: center;
-}
+@import "src/variables/lenghts";
 
 .sectionBlog {
   height: 50vh;
@@ -11,9 +7,11 @@ sectionBlog {
 
   &__container {
     height: 30vh;
+    //margin-top: $page-header-height;
   }
-    &__one {
-      background-color: purple;
-    }
+
+  &__one {
+    background-color: purple;
+  }
 
 }
