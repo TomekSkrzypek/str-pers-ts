@@ -3,7 +3,11 @@
 
 .PageHeaderAndIcons{
   //position: absolute;
-  //top: 0;
+//  top: 0;
+//  width: 100%;
+//  //display: inline-block;
+//  position: relative;
+//  overflow: hidden;
 }
 
 .PageHeader {
@@ -18,19 +22,25 @@
   //align-items: center;
   //height: 100vh;
   //width: 100vw;
+  //height: 20px;
 
   @media (min-width: $mobile-breakpoint) {
     //DESKTOP
     display: flex;
-    background-color: red;
+    //background-color: red;
     justify-content: space-between;
+    align-items: center;
     height: $page-header-height;
     font-size: 2rem;
     text-decoration: none;
     color: white;
-    position: sticky;
+    //position: relative;
+    //z-index: 100;
+    //overflow: hidden;
+    background-color: #333;
+    position: fixed;
     top: 0;
-    z-index: 100;
+    width: 100%;
   }
 
   &__MenuIcon {
@@ -46,6 +56,11 @@
     padding: 1rem;
     //scale: 1.2;
     z-index: 98;
+    @media (min-width: $mobile-breakpoint){
+      //DESKTOP
+      display: none;
+    }
+
   }
 
   &__CloseIcon {

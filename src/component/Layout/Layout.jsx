@@ -17,20 +17,22 @@ export function Layout() {
 
             <Router>
 
-                <PageHeader/>
+                <div className='Layout__container'>
 
-                <main className="Layout__main">
-                    <Outlet/>
-                </main>
+                    <PageHeader />
 
+                    <main className="Layout__main">
+                        <Outlet/>
+                    </main>
 
-
+                </div>
 
                 <Routes>
                     <Route path="/" element={<ScrollPage/>}/>
                     <Route path="/blog" element={<Blog/>}/>
                     <Route path="/mail" element={<Mail/>}/>
                 </Routes>
+
             </Router>
 
         </div>

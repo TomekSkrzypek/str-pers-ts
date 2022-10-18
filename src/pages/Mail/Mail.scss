@@ -1,14 +1,17 @@
+@import "src/variables/lenghts";
+
 sectionMail {
   height: 50vh;
   display: flex;
   justify-content: center;
+
 
 }
 
 .sectionMail {
   &__container {
     height: 30vh;
-
+    margin-top: $page-header-height;
     &Mail__one {
       background-color: purple;
     }
