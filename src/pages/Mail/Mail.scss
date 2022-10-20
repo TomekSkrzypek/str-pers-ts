@@ -1,3 +1,4 @@
+@import "src/variables/breakpoints";
 @import "src/variables/lenghts";
 
 sectionMail {
@@ -11,9 +12,34 @@ sectionMail {
 .sectionMail {
   &__container {
     height: 30vh;
-    margin-top: $page-header-height;
-    &Mail__one {
-      background-color: purple;
+
+    @media (min-width: $mobile-breakpoint) {
+      //DESKTOP
+      margin-top: $page-header-height;
+      //padding-top: $page-header-height;
     }
+
+  }
+
+  &__one {
+    background-color: khaki;
+    padding-top: $page-header-height;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: darkolivegreen;
+    padding:55px;
+    border-radius: 25px;
+    margin: 25px;
+
   }
 }

@@ -13,6 +13,9 @@ export function PageHeader() {
     const toggle = () => {
         setIsOpen(!isOpen)
         console.log("toggle ! is open state=" + isOpen)
+        // if (isOpen) {
+        //     // HiOutlineMenu.style{display: 'none'};
+        // }
     }
 
     return (
@@ -23,8 +26,8 @@ export function PageHeader() {
                 <Logo/>
                 <Menu isOpen={isOpen} toggle={toggle}/>
             </header>
-            <HiOutlineMenu onClick={toggle} className="PageHeader__MenuIcon"/>
-            <HiOutlineX onClick={toggle} className="PageHeader__CloseIcon"/>
+            {isOpen ?  <HiOutlineX onClick={toggle} className="PageHeader__CloseIcon"/> :
+           <HiOutlineMenu onClick={toggle} className="PageHeader__MenuIcon"/>}
 
         </div>
 

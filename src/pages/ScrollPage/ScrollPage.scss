@@ -1,3 +1,4 @@
+@import "src/variables/breakpoints";
 @import "src/variables/lenghts";
 
 section {
@@ -23,11 +24,16 @@ section {
 
     //position: absolute;
     //top: $page-header-height;
-    margin-top: $page-header-height;
+
 
     //hiding scrollbar
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+
+    @media (min-width: $mobile-breakpoint){
+      //DESKTOP
+      margin-top: $page-header-height;
+    }
   }
 
   &__container::-webkit-scrollbar {

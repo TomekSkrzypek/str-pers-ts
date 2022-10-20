@@ -1,14 +1,16 @@
 @import "src/variables/breakpoints";
 @import "src/variables/lenghts";
 
-.PageHeaderAndIcons{
-  //position: absolute;
+//.PageHeaderAndIcons{
+//  position: absolute;
 //  top: 0;
 //  width: 100%;
+//  height: 100%;
+//  margin: 0 auto;
 //  //display: inline-block;
 //  position: relative;
-//  overflow: hidden;
-}
+//  overflow: auto;
+//}
 
 .PageHeader {
   //MOBILE
@@ -45,7 +47,7 @@
 
   &__MenuIcon {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     transform: translate(-40%, 30%);
@@ -55,7 +57,7 @@
     opacity: 0.8;
     padding: 1rem;
     //scale: 1.2;
-    z-index: 98;
+    //z-index: 98;
     @media (min-width: $mobile-breakpoint){
       //DESKTOP
       display: none;
@@ -76,7 +78,7 @@
     //opacity: ${({isOpen}) => (isOpen ? '100%' : '0')}
     padding: 1rem;
     //scale: 1.2;
-    z-index: 98;
+    //z-index: 98;
 
     @media (min-width: $mobile-breakpoint){
       //DESKTOP

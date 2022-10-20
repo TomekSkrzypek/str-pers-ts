@@ -1,3 +1,4 @@
+@import "src/variables/breakpoints";
 @import "src/variables/lenghts";
 
 .sectionBlog {
@@ -8,11 +9,16 @@
   &__container {
     height: 30vh;
     width: 100vw;
-    margin-top: $page-header-height;
+
+    @media (min-width: $mobile-breakpoint){
+      //DESKTOP
+      margin-top: $page-header-height;
+      //padding-top: $page-header-height;
+    }
   }
 
   &__one {
     background-color: purple;
+    padding-top: $page-header-height;
   }
-
 }
