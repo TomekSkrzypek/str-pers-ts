@@ -1,7 +1,9 @@
 import React from "react";
 import './ScrollPage.scss';
+// import supabase from "../../config/supabaseClient";
 
 export function ScrollPage() {
+    // console.log("supa aasdbase" + supabase)
     return (
         // <div className="section__uber-container">
             <div className="section__container">

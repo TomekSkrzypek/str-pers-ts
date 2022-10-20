@@ -53,6 +53,8 @@ export function Mail() {
         eventThatTriggered.preventDefault();
     }
 
+    let finalValues = [];
+
     return (
         <div className="sectionMail__container">
             <section className="sectionMail__one">
@@ -90,7 +92,7 @@ export function Mail() {
                         )
                     )}
 
-                    <button>Submit</button>
+                    <button onClick={eventClick => finalValues = values} type="submit">Submit</button>
                 </form>
             </section>
         </div>
