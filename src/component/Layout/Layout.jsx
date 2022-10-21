@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Outlet, NavLink, BrowserRouter, Link} from "react-router-dom";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 // import {Home} from '../../pages/Home/Home';
@@ -17,7 +17,8 @@ import './Layout.scss'
 
 export function Layout() {
 
-    console.log("supa base" + supabase)
+    // console.log(supabase)
+    // const[fetchError, setFetchError] = useState(null)
 
     return (
         <div className="Layout">
