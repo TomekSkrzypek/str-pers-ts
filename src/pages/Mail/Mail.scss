@@ -11,8 +11,8 @@ sectionMail {
 
 .sectionMail {
   &__container {
-    height: 30vh;
-
+    height: 100vh;
+    overflow: hidden;
     @media (min-width: $mobile-breakpoint) {
       //DESKTOP
       margin-top: $page-header-height;
@@ -29,6 +29,7 @@ sectionMail {
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
+    overflow: scroll;
   }
 
   &__form {

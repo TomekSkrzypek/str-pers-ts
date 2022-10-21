@@ -2,15 +2,16 @@
 @import "src/variables/lenghts";
 
 .sectionBlog {
-  height: 50vh;
+  height: 10vh;
   display: flex;
   justify-content: center;
 
   &__container {
-    height: 30vh;
+    height: 1000vh;
     width: 100vw;
+    overflow: hidden;
 
-    @media (min-width: $mobile-breakpoint){
+    @media (min-width: $mobile-breakpoint) {
       //DESKTOP
       margin-top: $page-header-height;
       //padding-top: $page-header-height;
@@ -20,5 +21,12 @@
   &__one {
     background-color: purple;
     padding-top: $page-header-height;
+
+    //ZEBY NIE BRALO overflow: hidden; Z GÓRY
+    overflow: scroll;
+    //WSTAWIONE TERAZ
+    //height: 100vh;
+    display: flex;
+    justify-content: center;
   }
 }

@@ -7,7 +7,7 @@ import {Mail} from '../../pages/Mail/Mail';
 import {ScrollPage} from '../../pages/ScrollPage/ScrollPage';
 import {PageHeader} from '../PageHeader/PageHeader.jsx';
 import {Menu} from "../Menu/Menu.jsx";
-// import supabase from "../../config/supabaseClient";
+import supabase from "../../config/supabaseClient";
 import './Layout.scss'
 
 
@@ -17,7 +17,7 @@ import './Layout.scss'
 
 export function Layout() {
 
-    // console.log("supa base" + supabase)
+    console.log("supa base" + supabase)
 
     return (
         <div className="Layout">
