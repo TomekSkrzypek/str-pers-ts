@@ -30,6 +30,11 @@ sectionMail {
     flex-direction: column;
     justify-content: flex-start;
     overflow: scroll;
+    width: 100vw;
+  }
+  &__one p{
+    padding: 20px;
+    font-size: 1.8rem;
   }
 
   &__form {
@@ -43,4 +48,14 @@ sectionMail {
     margin: 25px;
 
   }
+
+  &__textarea-label{
+    margin-bottom: 8px;
+    margin-top: 15px;
+  }
+}
+
+#message{
+  //padding: 5px;
+  margin-bottom: 10px;
 }

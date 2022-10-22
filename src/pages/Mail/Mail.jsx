@@ -3,7 +3,6 @@ import {useRef} from "react";
 import {useState} from "react";
 import './Mail.scss';
 import {FormInput} from "../../component/FormInput/FormInput.jsx";
-// import supabase from "../../config/supabaseClient.js";
 import supabase from "../../config/supabaseClient";
 
 export function Mail() {
@@ -19,7 +18,8 @@ export function Mail() {
     const ref = useRef(null);
 
     const [formError, setFormError] = useState(null);
-
+    const [fetchError, setFetchError] = useState(null)
+    const [myClients, setMyClients] = useState(null)
 
     // TBALICA WLASCIWOSCI INPUTÓW
     const inputs = [
@@ -27,15 +27,15 @@ export function Mail() {
             id: 1,
             name: "firstName",
             type: "text",
-            placeholder: "Podaj Pierwsze Imię",
-            label: "Twoje Imię"
+            placeholder: "Twoje Imię Tutaj Podaj",
+            label: "Podaj swoje imię:"
         },
         {
             id: 2,
             name: "email",
             type: "text",
-            placeholder: "Podaj E-mailllos",
-            label: "E-mail Label"
+            placeholder: "e-mail tutaj",
+            label: "Podaj e-mail:"
         },
         // {
         //     id: 3,
@@ -60,8 +60,7 @@ export function Mail() {
 
 
     console.log(supabase)
-    const [fetchError, setFetchError] = useState(null)
-    const [myClients, setMyClients] = useState(null)
+
 
     //USE EFFECT HOOK FIRES A FUNCTION WHEN COMPONENET FIRST RENDER
     useEffect(() => {
@@ -125,28 +124,26 @@ export function Mail() {
                 <h1>Mail</h1>
 
 
-                {fetchError && (<p>{fetchError}</p>)}
-                {myClients && (
-                    <div className="myClients">
-                        {myClients.map((client) => (
-                                <p key={client.id}>{client.messageS}</p>
-                            )
-                        )}
-                    </div>
-                )}
+                {/* WYSWIETLENIE WIADOMOSCI POBRANYCH Z BAZY po FETCH (chyba)*/}
+                {/*{myClients && (*/}
+                {/*    <div className="myClients">*/}
+                {/*        {myClients.map((client) => (*/}
+                {/*                <p key={client.id}>{client.messageS}</p>*/}
+                {/*            )*/}
+                {/*        )}*/}
+                {/*    </div>*/}
+                {/*)}*/}
 
-                <p>ique. Atque autlorem1000 fuga unde? Cum, dicta dolorum id maiores placeat quas repellendus
-                    repudiandae
-                    saepe suscipit temporibus unde voluptatibus!</p>
+                <p>Chcesz dowiadywać się kiedy i gdzie gram?</p>
+                <p>...albo może jakaś współpraca? </p>
+                <p>...albo masz jakąś inną sprawę?</p>
+                <p>Zapraszam do konatku.</p>
 
 
                 {/*MAPOWANIE PO TABLICY INPUTS co tworzy nam tyle komponentów ile znajduje się w tablicy
                 unikatowy klucz key rowny id
                 */}
                 <form className="sectionMail__form" onSubmit={handleSubmit}>
-                    <label>Wiadomość poniżej</label>
-                    <textarea ref={ref} id="message" placeholder="Co tam ?"
-                              onChange={(event) => setValues({message: ref.current.value})}/>
 
                     {inputs.map((input) => (
                             <FormInput
@@ -172,12 +169,19 @@ export function Mail() {
                             />
                         )
                     )}
-                    {/*onClick={eventClick => finalValues = values}*/}
+
+                    <label className="sectionMail__textarea-label">Wiadomość poniżej zapraszam...</label>
+                    <textarea ref={ref} id="message" placeholder="Jakieś kliku kliku..."
+                              onChange={(event) => setValues({message: ref.current.value})}/>
+
                     <button type="submit">Submit</button>
+                    {fetchError && (<p>{fetchError}</p>)}
                     {formError && <p className={"error"}>{formError}</p>}
-                    <h1>{values.firstName}</h1>
-                    <h1>{values.message}</h1>
-                    <h1>{values.email}</h1>
+
+                    {/*WYSWIETLANIE WARTOSCI BEZPOSREDNIO WPISYWYANYCH*/}
+                    {/*<h1>{values.firstName}</h1>*/}
+                    {/*<h1>{values.message}</h1>*/}
+                    {/*<h1>{values.email}</h1>*/}
                 </form>
             </section>
         </div>

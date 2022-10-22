@@ -10,7 +10,7 @@ export function FormInput(props) {
 
     return (
         <div className="formInput">
-            <label>{label}</label>
+            <label className="formInput__label">{label}</label>
 
             <input key={id}
                 // key={props.id}
