@@ -94,10 +94,10 @@ export function Mail() {
     const handleSubmit = async (eventThatTriggered) => {
         eventThatTriggered.preventDefault();
 
-        if (!values.firstName) {
-            setFormError("Name is missing dude.")
-            return
-        }
+        // if (!values.firstName) {
+        //     setFormError("Name is missing dude.")
+        //     return
+        // }
         // console.log("Values put...")
         // console.log(values.firstName, values.email, values.message)
 
@@ -145,6 +145,7 @@ export function Mail() {
                 */}
                 <form className="sectionMail__form" onSubmit={handleSubmit}>
 
+
                     {inputs.map((input) => (
                             <FormInput
                                 key={input.id}
@@ -172,7 +173,7 @@ export function Mail() {
 
                     <label className="sectionMail__textarea-label">Wiadomość poniżej zapraszam...</label>
                     <textarea ref={ref} id="message" placeholder="Jakieś kliku kliku..."
-                              onChange={(event) => setValues({message: ref.current.value})}/>
+                              onChange={(event) => setValues({...values, message: ref.current.value})}/>
 
                     <button type="submit">Submit</button>
                     {fetchError && (<p>{fetchError}</p>)}
