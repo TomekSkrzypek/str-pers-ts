@@ -30,7 +30,7 @@ section {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 
-    @media (min-width: $mobile-breakpoint){
+    @media (min-width: $mobile-breakpoint) {
       //DESKTOP
       margin-top: $page-header-height;
     }
@@ -42,8 +42,11 @@ section {
   }
 
   &__one {
-    background-color: aqua;
-
+    background-image: url('src/assets/IMG_1623.jpg');
+    background-repeat: no-repeat;
+    //background-position: top left;
+    background-size: cover;
+    background-position: bottom center;
   }
 
   &__two {

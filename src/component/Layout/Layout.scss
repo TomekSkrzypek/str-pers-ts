@@ -9,8 +9,9 @@
 
   &__container {
     width: 100%;
-    display: inline-block;
+    //display: inline-block;
     position: absolute;
+
 
   }
 
@@ -26,7 +27,7 @@
     //to wyzej pan Jacek
     position: absolute;
     //top: 550px;
-
+    //overflow: hidden;
 
     //height: calc(100vh - $page-header-height);
     //top: -180px;

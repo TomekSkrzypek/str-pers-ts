@@ -11,8 +11,8 @@ sectionMail {
 
 .sectionMail {
   &__container {
-    height: 100vh;
-    overflow: hidden;
+    //height: 100vh;
+    //overflow: hidden;
     @media (min-width: $mobile-breakpoint) {
       //DESKTOP
       margin-top: $page-header-height;
@@ -31,6 +31,7 @@ sectionMail {
     justify-content: flex-start;
     overflow: scroll;
     width: 100vw;
+    height: 100vh;
   }
   &__one p{
     padding: 20px;
