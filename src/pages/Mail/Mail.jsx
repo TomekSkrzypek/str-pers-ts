@@ -123,6 +123,14 @@ export function Mail() {
             <section className="sectionMail__one">
                 <h1>Mail</h1>
 
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cumque magnam molestiae perferendis sunt.
+                    Cumque debitis doloremque dolorum enim facere fugit harum laborum maxime, mollitia nam,
+                    necessitatibus, optio quaerat sequi soluta vitae? Accusamus architecto, blanditiis deleniti deserunt
+                    dolore eveniet excepturi fugit laudantium maiores, minus modi perferendis placeat quasi quod, quos
+                    similique unde! A ab, accusamus aut beatae debitis distinctio eaque est excepturi exercitationem
+                    facilis id illo ipsa laboriosam magni minima modi molestias placeat possimus praesentium quasi, quod
+                    quos repellat rerum sequi sit sunt tempore temporibus velit voluptatibus voluptatum! Accusantium
+                    aspernatur consequatur cumque earum magnam nostrum officia pariatur possimus quibusdam vitae.</p>
 
                 {/* WYSWIETLENIE WIADOMOSCI POBRANYCH Z BAZY po FETCH (chyba)*/}
                 {/*{myClients && (*/}
@@ -163,7 +171,7 @@ export function Mail() {
                                 value={values[input.name]}
 
 
-                                // przekazuje funckje onChange to komponentu FormInput
+                                // przekazuje funckje onChange do komponentu FormInput
                                 onChange={onChange}
 
                                 // ref.current.value

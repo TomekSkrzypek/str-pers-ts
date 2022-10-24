@@ -8,7 +8,11 @@
 
   &__container {
     display: flex;
+    //padding-top: $page-header-height;
+
+    //position: relative;
     height: 100vh;
+    //box-sizing: content-box;
     //height: calc (100 vh- 2*($page-header-height));
     //width: 100vw;
     overflow: hidden;
@@ -22,26 +26,27 @@
 
   &__one {
     background-color: purple;
-    //padding-top: $page-header-height;
+    //box-sizing: content-box;
+    padding-top: $page-header-height;
     //margin-top: $page-header-height;
     //ZEBY NIE BRALO overflow: hidden; Z GÓRY
     overflow: scroll;
     //WSTAWIONE TERAZ
     //height: 100vh;
     display: flex;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
     //height: calc(100% - $page-header-height);
     height: 100%;
-    width: 100vw;
+    width: 100%;
     //margin: 0 auto;
     //@media (min-width: $mobile-breakpoint) {
     //  //DESKTOP
     //  margin-top: $page-header-height;
     //  //padding-top: $page-header-height;
     //}
-
 
 
   }

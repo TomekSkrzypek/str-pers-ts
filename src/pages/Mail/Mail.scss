@@ -11,7 +11,10 @@ sectionMail {
 
 .sectionMail {
   &__container {
-    //height: 100vh;
+    //height: calc(100vh - $page-header-height);
+
+    width: 100vw;
+    //position: relative;
     //overflow: hidden;
     @media (min-width: $mobile-breakpoint) {
       //DESKTOP
@@ -30,10 +33,11 @@ sectionMail {
     flex-direction: column;
     justify-content: flex-start;
     overflow: scroll;
-    width: 100vw;
-    height: 100vh;
+    //width: 100vw;
+    //height: 100vh;
   }
-  &__one p{
+
+  &__one p {
     padding: 20px;
     font-size: 1.8rem;
   }
@@ -44,19 +48,19 @@ sectionMail {
     align-items: flex-start;
     justify-content: space-between;
     background-color: darkolivegreen;
-    padding:55px;
+    padding: 55px;
     border-radius: 25px;
     margin: 25px;
 
   }
 
-  &__textarea-label{
+  &__textarea-label {
     margin-bottom: 8px;
     margin-top: 15px;
   }
 }
 
-#message{
+#message {
   //padding: 5px;
   margin-bottom: 10px;
 }
