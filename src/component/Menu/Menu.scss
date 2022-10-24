@@ -7,7 +7,7 @@ li {
 
 .Menu {
   //MOBILE
-overflow: hidden;
+  overflow: hidden;
   list-style: none;
   margin: 0 auto;
   //padding: 1.25rem;
@@ -26,6 +26,7 @@ overflow: hidden;
   height: 100vh;
   width: 100vw;
   z-index: 100;
+
 
 
   &__item {

@@ -21,12 +21,12 @@ export function Menu({toggle, isOpen}) {
     return (
         <>
             {(isOpen || isDesktop) && <div>
-            <ul className="Menu">
-                <li><Link className="Menu__item" to="/" onClick={toggle}>Strona główna</Link></li>
-                <li><Link className="Menu__item" to="/blog" onClick={toggle}>Blog</Link></li>
-                <li><Link className="Menu__item" to="/mail" onClick={toggle}>Mail</Link></li>
-            </ul>
-        </div>}
+                <ul className="Menu">
+                    <li><Link className="Menu__item" to="/" onClick={toggle}>Strona główna</Link></li>
+                    <li><Link className="Menu__item" to="/blog" onClick={toggle}>Blog</Link></li>
+                    <li><Link className="Menu__item" to="/mail" onClick={toggle}>Mail</Link></li>
+                </ul>
+            </div>}
         </>
     )
 }

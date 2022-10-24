@@ -8,10 +8,13 @@
 
   &__container {
     display: flex;
+    height: 100vh;
+   //width: 100vw;
+
     //padding-top: $page-header-height;
 
     //position: relative;
-    height: 100vh;
+
     //box-sizing: content-box;
     //height: calc (100 vh- 2*($page-header-height));
     //width: 100vw;
@@ -34,7 +37,7 @@
     //WSTAWIONE TERAZ
     //height: 100vh;
     display: flex;
-
+    font-size: 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -50,4 +53,9 @@
 
 
   }
+
 }
+
+//h1 {
+//  padding-top: 200px;
+//}
