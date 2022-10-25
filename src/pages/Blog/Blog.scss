@@ -1,15 +1,37 @@
 @import "src/variables/breakpoints";
 @import "src/variables/lenghts";
 
+//poprawka wtorek
+.section {
+  //height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  //box-sizing: border-box;
+  //align-items: center;
+  scroll-snap-align: start;
+  border: khaki 3px solid;
+  //flex-wrap: nowrap;
+  height: auto;
+}
+
+
 .sectionBlog {
   //height: 10vh;
   //display: flex;
   //justify-content: center;
 
   &__container {
-    display: flex;
+    //display: flex;
+    //flex-direction: column;
+    scroll-snap-type: y proximity;
+    border: red 10px dotted;
+    overflow-y: scroll;
     height: 100vh;
-   //width: 100vw;
+    width: 100vw;
+    background-color: purple;
 
     //padding-top: $page-header-height;
 
@@ -18,7 +40,7 @@
     //box-sizing: content-box;
     //height: calc (100 vh- 2*($page-header-height));
     //width: 100vw;
-    overflow: hidden;
+    //overflow: hidden;
 
     @media (min-width: $mobile-breakpoint) {
       //DESKTOP
@@ -27,32 +49,32 @@
     }
   }
 
-  &__one {
-    background-color: purple;
-    //box-sizing: content-box;
-    padding-top: $page-header-height;
-    //margin-top: $page-header-height;
-    //ZEBY NIE BRALO overflow: hidden; Z GÓRY
-    overflow: scroll;
-    //WSTAWIONE TERAZ
-    //height: 100vh;
-    display: inline-block;
-    font-size: 1rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    //height: calc(100% - $page-header-height);
-    height: 93%;
-    width: 100%;
-    //margin: 0 auto;
-    //@media (min-width: $mobile-breakpoint) {
-    //  //DESKTOP
-    //  margin-top: $page-header-height;
-    //  //padding-top: $page-header-height;
-    //}
-
-
-  }
+  //&__one {
+  //  background-color: purple;
+  //  //box-sizing: content-box;
+  //  padding-top: $page-header-height;
+  //  //margin-top: $page-header-height;
+  //  //ZEBY NIE BRALO overflow: hidden; Z GÓRY
+  //  overflow: scroll;
+  //  //WSTAWIONE TERAZ
+  //  height: 100vh;
+  //  display: inline-block;
+  //  font-size: 1rem;
+  //  flex-direction: column;
+  //  justify-content: center;
+  //  align-items: center;
+  //  //height: calc(100% - $page-header-height);
+  //  //height: 93%;
+  //  width: 100%;
+  //  //margin: 0 auto;
+  //  //@media (min-width: $mobile-breakpoint) {
+  //  //  //DESKTOP
+  //  //  margin-top: $page-header-height;
+  //  //  //padding-top: $page-header-height;
+  //  //}
+  //
+  //
+  //}
 
 }
 

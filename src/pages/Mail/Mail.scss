@@ -12,11 +12,16 @@ sectionMail {
 .sectionMail {
   &__container {
     //height: calc(100vh - $page-header-height);
-    overflow: hidden;
+    //overflow: hidden;
     //width: 100vw;
     //display: flex;
-    height: 100%;
-
+    //height: 100%;
+    border: red 10px dotted;
+    overflow-y: scroll;
+    height: 100vh;
+    width: 100vw;
+    background-color: palegreen;
+    //scroll-snap-type: y mandatory;
 
     //position: relative;
     //overflow: hidden;
@@ -29,18 +34,31 @@ sectionMail {
   }
 
   &__one {
-    background-color: khaki;
-    padding-top: $page-header-height;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: flex-start;
-    overflow: scroll;
-    height: 92%;
-    //width: 100vw;
-    //overflow-x: auto;
+    //background-color: khaki;
+    //padding-top: $page-header-height;
+    //font-size: 1rem;
+    //display: flex;
+    //align-items: center;
+    //flex-direction: column;
+    //justify-content: flex-start;
+    //overflow: scroll;
+    ////height: 92%;
+    ////width: 100vw;
+    ////overflow-x: auto;
     //height: 100vh;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    //box-sizing: border-box;
+    //align-items: center;
+    //scroll-snap-align: start;
+    border: khaki 3px solid;
+    //flex-wrap: nowrap;
+    height: auto;
   }
 
   &__one p {
