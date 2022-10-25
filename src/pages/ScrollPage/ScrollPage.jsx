@@ -1,6 +1,7 @@
 import React from "react";
 import './ScrollPage.scss';
 // import supabase from "../../config/supabaseClient";
+// import IMG_1623 from '../../assets/IMG_1623.jpg'
 
 export function ScrollPage() {
     // console.log("supa aasdbase" + supabase)
