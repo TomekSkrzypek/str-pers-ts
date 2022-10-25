@@ -12,8 +12,12 @@ sectionMail {
 .sectionMail {
   &__container {
     //height: calc(100vh - $page-header-height);
+    overflow: hidden;
+    //width: 100vw;
+    //display: flex;
+    height: 100%;
 
-    width: 100vw;
+
     //position: relative;
     //overflow: hidden;
     @media (min-width: $mobile-breakpoint) {
@@ -33,7 +37,9 @@ sectionMail {
     flex-direction: column;
     justify-content: flex-start;
     overflow: scroll;
+    height: 92%;
     //width: 100vw;
+    //overflow-x: auto;
     //height: 100vh;
   }
 

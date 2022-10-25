@@ -76,7 +76,8 @@ export function Blog() {
                     consequatur deserunt doloribus eaque laboriosam laborum magnam molestias, mollitia neque nisi
                     nostrum numquam perspiciatis provident quidem repudiandae sit voluptates. A alias amet animi beatae
                     blanditiis deleniti, dolorem doloremque earum expedita harum illo, molestiae molestias numquam
-                    officiis quo recusandae sapiente similique sit suscipit voluptatem!</p>
+                    officiis quo recusandae sapiente similique sit suscipit voluptatem!
+                KONIEC</p>
             </section>
         </div>
     )
