@@ -6,6 +6,7 @@ import {FormInput} from "../../component/FormInput/FormInput.jsx";
 import supabase from "../../config/supabaseClient";
 import CustomizedSnackbars from "../../component/Snackbar/Snackbar";
 import Button from '@mui/joy/Button';
+import {useNavigate} from "react-router-dom";
 
 export function Mail() {
 
@@ -22,6 +23,8 @@ export function Mail() {
     const [formError, setFormError] = useState(null);
     const [fetchError, setFetchError] = useState(null)
     const [myClients, setMyClients] = useState(null)
+    const [submitValue, setSubmitValue] = useState(false)
+
 
     // TBALICA WLASCIWOSCI INPUTÓW
     const inputs = [
@@ -93,8 +96,30 @@ export function Mail() {
     //empty array makes it fire once
 
 
+    const navigate = useNavigate();
+    let counter = 0
+    console.log("conter before useEffect" + counter)
+    useEffect(() => {
+        const myTimer = setTimeout(() => {
+            console.log("naviagte submit?")
+            console.log("conter in setTimeout submit" + counter)
+            navigate('/')
+
+        }, 2000)
+
+        return()=>{
+            clearTimeout(myTimer)
+        }
+
+    }, [counter])
+
     const handleSubmit = async (eventThatTriggered) => {
         eventThatTriggered.preventDefault();
+
+        counter++
+        console.log("conter in handle submit" + counter)
+        // setSubmitValue(!submitValue)
+
 
         // if (!values.firstName) {
         //     setFormError("Name is missing dude.")
@@ -117,7 +142,10 @@ export function Mail() {
         if (data) {
             console.log(data)
             setFormError(null)
+
         }
+
+
     }
 
     return (
@@ -125,7 +153,10 @@ export function Mail() {
             <section className="sectionMail__one">
                 <h1>Mail</h1>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cumque magnam molestiae perferendis sunt.
+                <p>PiecCztery Trzy dwaasdasdLorem ipsum dolor sit amet, consectetur adipisicing elit. A cumque magnam
+                    molestiae
+                    perferendis
+                    sunt.
                     Cumque debitis doloremque dolorum enim facere fugit harum laborum maxime, mollitia nam,
                     necessitatibus, optio quaerat sequi soluta vitae? Accusamus architecto, blanditiis deleniti deserunt
                     dolore eveniet excepturi fugit laudantium maiores, minus modi perferendis placeat quasi quod, quos
@@ -185,11 +216,11 @@ export function Mail() {
                     <textarea ref={ref} id="message" placeholder="Jakieś kliku kliku..."
                               onChange={(event) => setValues({...values, message: ref.current.value})}/>
 
-<button className="sectionMail__button" type="submit">SZUBMIT</button>
-                   {/*<CustomizedSnackbars/>*/}
+                    <button className="sectionMail__button" type="submit">SZUBMIT</button>
+                    {/*<CustomizedSnackbars/>*/}
                     {/*<CustomizedSnackbars <Button></Button>/>*/}
-{/*<CustomizedSnackbars type="submit"/>*/}
-{/*                    <Button type="submit"><CustomizedSnackbars/></Button>*/}
+                    {/*<CustomizedSnackbars type="submit"/>*/}
+                    {/*                    <Button type="submit"><CustomizedSnackbars/></Button>*/}
                     {/*<button  className="sectionMail__button" type="submit"><CustomizedSnackbars className="newShit"/></button>*/}
                     {fetchError && (<p>{fetchError}</p>)}
                     {formError && <p className={"error"}>{formError}</p>}
