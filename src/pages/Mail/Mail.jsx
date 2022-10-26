@@ -97,27 +97,32 @@ export function Mail() {
 
 
     const navigate = useNavigate();
-    let counter = 0
-    console.log("conter before useEffect" + counter)
-    useEffect(() => {
-        const myTimer = setTimeout(() => {
-            console.log("naviagte submit?")
-            console.log("conter in setTimeout submit" + counter)
-            navigate('/')
 
-        }, 2000)
+    // let counter = 0
+    // console.log("conter before useEffect" + counter)
+    //
+    //
+    //     useEffect(() => {
+    //         // const myTimer =
+    //             setTimeout(() => {
+    //             console.log("naviagte submit?")
+    //             console.log("conter in setTimeout submit" + counter)
+    //             navigate('/blog')
+    //
+    //         }, 2000)
+    //         // return()=>{
+    //         //     clearTimeout(myTimer)
+    //         // }
+    //         console.log("before return")
+    //         return navigate('/mail')
+    //     }, [submitValue])
 
-        return()=>{
-            clearTimeout(myTimer)
-        }
-
-    }, [counter])
 
     const handleSubmit = async (eventThatTriggered) => {
         eventThatTriggered.preventDefault();
 
-        counter++
-        console.log("conter in handle submit" + counter)
+        // counter++
+        // console.log("conter in handle submit" + counter)
         // setSubmitValue(!submitValue)
 
 
@@ -153,7 +158,7 @@ export function Mail() {
             <section className="sectionMail__one">
                 <h1>Mail</h1>
 
-                <p>PiecCztery Trzy dwaasdasdLorem ipsum dolor sit amet, consectetur adipisicing elit. A cumque magnam
+                <p>210DziewiwecOsiemPiecCztery Trzy dwaasdasdLorem ipsum dolor sit amet, consectetur adipisicing elit. A cumque magnam
                     molestiae
                     perferendis
                     sunt.
@@ -216,7 +221,7 @@ export function Mail() {
                     <textarea ref={ref} id="message" placeholder="Jakieś kliku kliku..."
                               onChange={(event) => setValues({...values, message: ref.current.value})}/>
 
-                    <button className="sectionMail__button" type="submit">SZUBMIT</button>
+                    <button className="sectionMail__button" type="submit" onClick={()=> navigate("/blog")}>SZUBMIT</button>
                     {/*<CustomizedSnackbars/>*/}
                     {/*<CustomizedSnackbars <Button></Button>/>*/}
                     {/*<CustomizedSnackbars type="submit"/>*/}

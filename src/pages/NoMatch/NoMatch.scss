@@ -1,0 +1,34 @@
+@import "src/variables/breakpoints";
+@import "src/variables/lenghts";
+
+
+.sectionNoMatch {
+  &__container {
+
+    height: 100vh;
+    width: 100vw;
+    //overflow: hidden;
+  }
+
+}
+
+.noMatch {
+  height: 100vh;
+  display: flex;
+  //line-height: 100vh;
+  //padding: 0;
+  //margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+color:white;
+
+  &__text-headerOne {
+    font-size: 600px;
+    margin: 0 auto;
+  }
+  &__text-paragraph{
+    font-size: 100px;
+    margin: 0 auto;
+  }
+}

@@ -6,6 +6,7 @@ import {Blog} from '../../pages/Blog/Blog';
 import {Mail} from '../../pages/Mail/Mail';
 import {ScrollPage} from '../../pages/ScrollPage/ScrollPage';
 import {PageHeader} from '../PageHeader/PageHeader.jsx';
+import {NoMatch} from "../../pages/NoMatch/NoMatch.jsx";
 import {Menu} from "../Menu/Menu.jsx";
 import supabase from "../../config/supabaseClient";
 import './Layout.scss'
@@ -39,6 +40,7 @@ export function Layout() {
                     <Route path="/" element={<ScrollPage/>}/>
                     <Route path="/blog" element={<Blog/>}/>
                     <Route path="/mail" element={<Mail/>}/>
+                    <Route path="*" element={<NoMatch/>}/>
                 </Routes>
 
             </Router>
