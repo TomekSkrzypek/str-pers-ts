@@ -10,6 +10,7 @@ import {NoMatch} from "../../pages/NoMatch/NoMatch.jsx";
 import {Menu} from "../Menu/Menu.jsx";
 import supabase from "../../config/supabaseClient";
 import './Layout.scss'
+import {ThanksForSending} from "../../pages/ThanksForSending/ThanksForSending";
 
 
 
@@ -40,6 +41,8 @@ export function Layout() {
                     <Route path="/" element={<ScrollPage/>}/>
                     <Route path="/blog" element={<Blog/>}/>
                     <Route path="/mail" element={<Mail/>}/>
+                    <Route path="/thanksForSending" element={<ThanksForSending/>}/>
+
                     <Route path="*" element={<NoMatch/>}/>
                 </Routes>
 

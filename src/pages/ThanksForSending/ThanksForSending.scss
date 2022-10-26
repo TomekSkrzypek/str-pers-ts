@@ -1,0 +1,62 @@
+@import "src/variables/breakpoints";
+@import "src/variables/lenghts";
+
+
+.ThanksForSending {
+  &__container {
+    height: 100vh;
+    width: 100vw;
+    //overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    @media (min-width: $mobile-breakpoint) {
+      //DESKTOP
+      //margin-top: $page-header-height;
+      background-color: green;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+  }
+
+  &__image {
+    margin: 0 auto;
+    width: 80vw;
+    border-radius: 5px;
+    padding-top: 40px;
+  }
+
+  &__text {
+    &-HeaderOne {
+      font-size: 5rem;
+      @media (min-width: $mobile-breakpoint) {
+        //DESKTOP
+        font-size: 100px;
+        margin: 0 auto;
+      }
+
+    }
+
+    &-HeaderTwo {
+      font-size: 3rem;
+      @media (min-width: $mobile-breakpoint) {
+        //DESKTOP
+        font-size: 100px;
+        margin: 0 auto;
+      }
+    }
+
+
+    &-paragraph {
+      font-size: 0.4rem;
+      @media (min-width: $mobile-breakpoint) {
+        //DESKTOP
+        font-size: 100px;
+        margin: 0 auto;
+      }
+    }
+
+  }
+}

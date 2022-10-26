@@ -221,7 +221,7 @@ export function Mail() {
                     <textarea ref={ref} id="message" placeholder="Jakieś kliku kliku..."
                               onChange={(event) => setValues({...values, message: ref.current.value})}/>
 
-                    <button className="sectionMail__button" type="submit" onClick={()=> navigate("/blog")}>SZUBMIT</button>
+                    <button className="sectionMail__button" type="submit" onClick={()=> navigate("/thanksForSending")}>SZUBMIT</button>
                     {/*<CustomizedSnackbars/>*/}
                     {/*<CustomizedSnackbars <Button></Button>/>*/}
                     {/*<CustomizedSnackbars type="submit"/>*/}
