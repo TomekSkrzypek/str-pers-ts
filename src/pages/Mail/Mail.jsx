@@ -4,6 +4,8 @@ import {useState} from "react";
 import './Mail.scss';
 import {FormInput} from "../../component/FormInput/FormInput.jsx";
 import supabase from "../../config/supabaseClient";
+import CustomizedSnackbars from "../../component/Snackbar/Snackbar";
+import Button from '@mui/joy/Button';
 
 export function Mail() {
 
@@ -183,7 +185,12 @@ export function Mail() {
                     <textarea ref={ref} id="message" placeholder="Jakieś kliku kliku..."
                               onChange={(event) => setValues({...values, message: ref.current.value})}/>
 
-                    <button type="submit">Submit</button>
+<button className="sectionMail__button" type="submit">SZUBMIT</button>
+                   {/*<CustomizedSnackbars/>*/}
+                    {/*<CustomizedSnackbars <Button></Button>/>*/}
+{/*<CustomizedSnackbars type="submit"/>*/}
+{/*                    <Button type="submit"><CustomizedSnackbars/></Button>*/}
+                    {/*<button  className="sectionMail__button" type="submit"><CustomizedSnackbars className="newShit"/></button>*/}
                     {fetchError && (<p>{fetchError}</p>)}
                     {formError && <p className={"error"}>{formError}</p>}
 

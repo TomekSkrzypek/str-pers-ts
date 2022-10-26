@@ -75,6 +75,7 @@ sectionMail {
     padding: 55px;
     border-radius: 25px;
     margin: 25px;
+    border: #333333 2px solid;
 
   }
 
@@ -82,9 +83,27 @@ sectionMail {
     margin-bottom: 8px;
     margin-top: 15px;
   }
+
+  &__button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: #333333 2px solid;
+  }
+
+  &__button:hover {
+    background-color: green;
+    color: white;
+  }
 }
 
 #message {
-  //padding: 5px;
   margin-bottom: 10px;
+  height: 100px;
 }
