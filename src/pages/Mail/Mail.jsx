@@ -150,6 +150,8 @@ export function Mail() {
 
         }
 
+        navigate('/thanksForSending', {replace: true});
+
 
     }
 
@@ -158,10 +160,7 @@ export function Mail() {
             <section className="sectionMail__one">
                 <h1>Mail</h1>
 
-                <p>210DziewiwecOsiemPiecCztery Trzy dwaasdasdLorem ipsum dolor sit amet, consectetur adipisicing elit. A cumque magnam
-                    molestiae
-                    perferendis
-                    sunt.
+                <p>1
                     Cumque debitis doloremque dolorum enim facere fugit harum laborum maxime, mollitia nam,
                     necessitatibus, optio quaerat sequi soluta vitae? Accusamus architecto, blanditiis deleniti deserunt
                     dolore eveniet excepturi fugit laudantium maiores, minus modi perferendis placeat quasi quod, quos
@@ -220,8 +219,8 @@ export function Mail() {
                     <label className="sectionMail__textarea-label">Wiadomość poniżej zapraszam...</label>
                     <textarea ref={ref} id="message" placeholder="Jakieś kliku kliku..."
                               onChange={(event) => setValues({...values, message: ref.current.value})}/>
-
-                    <button className="sectionMail__button" type="submit" onClick={()=> navigate("/thanksForSending")}>SZUBMIT</button>
+                    {/*onClick={()=> navigate("/thanksForSending")}*/}
+                    <button className="sectionMail__button" type="submit" >SZUBMIT</button>
                     {/*<CustomizedSnackbars/>*/}
                     {/*<CustomizedSnackbars <Button></Button>/>*/}
                     {/*<CustomizedSnackbars type="submit"/>*/}

@@ -3,58 +3,114 @@
 
 
 .ThanksForSending {
+  &__textAndPicture-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 90vw;
+    @media (min-width: $mobile-breakpoint) {
+      //DESKTOP
+      //margin-top: $page-header-height;
+      //gap: 1rem;
+      background-color: green;
+      flex-direction: row;
+      align-items: center;
+      margin-top: $page-header-height;
+      //width: 80vw;
+      //height: 70vh;
+
+      //width: 100%;
+      //height: 100%;
+
+      height: 90vh;
+
+      justify-content: center;
+    }
+
+
+  }
+
   &__container {
     height: 100vh;
     width: 100vw;
     //overflow: hidden;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: red;
+    overflow: hidden;
     @media (min-width: $mobile-breakpoint) {
       //DESKTOP
       //margin-top: $page-header-height;
       background-color: green;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
+
 
     }
   }
 
   &__image {
     margin: 0 auto;
-    width: 80vw;
-    border-radius: 5px;
-    padding-top: 40px;
+    width: 100%;
+    border-radius: 25px;
+    //padding-top: 40px;
+    @media (min-width: $mobile-breakpoint) {
+      //DESKTOP
+      //margin: 0 auto;
+      //width: 100%;
+      height: 70%;
+      margin: 0;
+      //height: auto;
+      width: auto;
+      border-radius: 25px;
+    }
   }
 
   &__text {
-    &-HeaderOne {
-      font-size: 5rem;
+    &-container {
+      background-color: khaki;
+      border-radius: 25px;
+      text-align: center;
       @media (min-width: $mobile-breakpoint) {
         //DESKTOP
-        font-size: 100px;
-        margin: 0 auto;
+        //padding: 0.5rem;
+        //margin-right: 1rem;
+        //width: 40%;
+        //margin-right: 20px;
+        width: auto;
+      }
+
+    }
+
+    &-HeaderOne {
+      font-size: 3rem;
+
+      @media (min-width: $mobile-breakpoint) {
+        //DESKTOP
+        font-size: 2rem;
+        padding: 1rem;
+        //margin: 0 auto;
       }
 
     }
 
     &-HeaderTwo {
-      font-size: 3rem;
+      font-size: 2rem;
       @media (min-width: $mobile-breakpoint) {
         //DESKTOP
-        font-size: 100px;
-        margin: 0 auto;
+        font-size: 1rem;
+        //margin: 0 auto;
       }
     }
 
 
     &-paragraph {
       font-size: 0.4rem;
+      margin-bottom: 0.5rem;
       @media (min-width: $mobile-breakpoint) {
         //DESKTOP
-        font-size: 100px;
-        margin: 0 auto;
+        font-size: 0.4rem;
+        //margin: 0 auto;
       }
     }
 
