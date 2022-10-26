@@ -23,7 +23,7 @@ export function ScrollPage() {
             </section>
             <section className="section__three">
                 <div className="alutek-image">Alutek</div>
-                <h1>ThirdPage</h1>
+
             </section>
         </div>
 
