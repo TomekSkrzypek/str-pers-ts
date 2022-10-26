@@ -1,16 +1,17 @@
 import React from "react";
 import './NoMatch.scss';
 import IMG_1623 from "../../../public/IMG_1623.jpg";
+import AlutekImage from "../../../public/AlutekImage.jpg"
 
 export function NoMatch() {
     return (
         <div className="sectionNoMatch__container">
 
             <div style={{
-                backgroundImage: `url(${IMG_1623})`,
+                backgroundImage: `url(${AlutekImage})`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
-                backgroundPosition: 'bottom center',
+                backgroundPosition: 'top center',
                 width: '100vw'
             }} className="noMatch">
 

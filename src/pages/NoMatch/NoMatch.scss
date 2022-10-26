@@ -21,14 +21,25 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-color:white;
+  color: white;
 
   &__text-headerOne {
-    font-size: 600px;
-    margin: 0 auto;
+    font-size: 5rem;
+    @media (min-width: $mobile-breakpoint) {
+      //DESKTOP
+      font-size: 500px;
+      margin: 0;
+
+    }
   }
-  &__text-paragraph{
-    font-size: 100px;
-    margin: 0 auto;
+
+  &__text-paragraph {
+    font-size: 2rem;
+    @media (min-width: $mobile-breakpoint) {
+      //DESKTOP
+      font-size: 100px;
+      margin: 0 auto;
+
+    }
   }
 }
